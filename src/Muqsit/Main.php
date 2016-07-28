@@ -23,11 +23,13 @@ class Main extends PluginBase implements Listener{
     $rewardMessage = $cfg->get("reward-message");
     if($p instanceof Player && $e instanceof EntityDamageByEntityEvent){
       $d = $e->getDamager();
-      switch(mt_rand(1, $rand)){
-        case 1:
-        $d->addExperience($exp);
-        $d->sendMessage($rewardMessage);
-        break;
+      if($d->hasPermission("assault.xp")){
+        switch(mt_rand(1, $rand)){
+          case 1:
+            $d->addExperience($exp);
+            $d->sendMessage($rewardMessage);
+          break;
+        }
       }
     }
   }
