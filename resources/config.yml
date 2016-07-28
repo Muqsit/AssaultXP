@@ -5,5 +5,5 @@ chance: 4
 #XP a player will receive as a reward.
 reward-xp: 10
 # Message sent to player when rewarded.
-reward-message: §a+ §e{xp} §aXP!
+reward-message: "§a§lXP §e> §r§a+ §b{xp} §aXP added!"
 ...
