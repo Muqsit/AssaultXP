@@ -1,0 +1,6 @@
+name: AssaultXP
+api: [1.13.1, 2.0.0]
+main: Muqsit\Main
+permission:
+  assault.xp:
+    default: op
