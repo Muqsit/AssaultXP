@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener{
         switch(mt_rand(1, $rand)){
           case 1:
             $d->addExperience($exp);
-            $d->sendMessage($rewardMessage);
+            $d->sendMessage(str_replace("{xp}", $exp, $rewardMessage));
           break;
         }
       }
