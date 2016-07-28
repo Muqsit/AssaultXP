@@ -1,0 +1,9 @@
+---
+#Percentage of chance a person can get rewarded when they do damage to a player.
+#If chance is 1, then the person will be rewarded everytime they hit a player. Percentage = 1 divided by chance.
+chance: 4
+#XP a player will receive as a reward.
+reward-xp: 10
+# Message sent to player when rewarded.
+reward-message: §a+ §e{xp} §aXP!
+...
